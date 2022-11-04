@@ -1,0 +1,154 @@
+@media screen and (max-width: 499px) {
+    .drawer-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        z-index: 10;
+        background-color: #cdd9e5;
+        width: 200px;
+        position: absolute;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-230px, 145px);
+        transform: translate(-230px, 145px);
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+
+    .open {
+        -webkit-transform: translate(-30px, 145px);
+        transform: translate(-30px, 145px);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    .nav-item {
+        border-bottom: 0.2px solid #000814;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .nav-item>a {
+        margin-left: 20px;
+        color: #000814 !important;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/hero-image_4-small.webp");
+    }
+
+    main,
+    section,
+    .con-title {
+        padding: 10px !important;
+    }
+
+    .nav-item>a,
+    .skip-link {
+        font-size: 14px;
+    }
+
+    .skip-link {
+        padding: 13px 10px 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2,
+    h3 {
+        font-size: 1em !important;
+    }
+
+    h4 {
+        font-size: 0.8em;
+    }
+
+    .text {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 575.98px) {}
+
+@media screen and (max-width: 768.98px) {
+
+    main,
+    section,
+    .con-title {
+        padding: 15px;
+    }
+
+    article {
+        margin: 10px;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .card-detail>.card-detail-inner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .card-detail>.card-detail-inner>img {
+        width: 100%;
+    }
+
+    .card-detail>.card-detail-inner>.restaurant-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card-detail>.restaurant-overview {
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 839px) {
+    .card {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {}
+
+@media screen and (max-width: 1199.98px) {}
+
+@media screen and (max-width: 1399.98px) {
+    .hero {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 400px) {}
+
+@media screen and (min-width: 500px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        min-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        max-width: 1400px;
+    }
+}
